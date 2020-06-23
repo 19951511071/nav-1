@@ -1,5 +1,14 @@
 {
+  "scripts" :{
+     "build" : "rm-rf dist && parcel build src/index.html --no-mnify --public-url ./"
+  },
   "devDependencies": {
     "cssnano": "^4.1.10"
-  }
+  },
+  "name": "0621",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/19951511071/nav-1.git",
+  "author": "weiyang <1274755779@qq.com>",
+  "license": "MIT"
 }
