@@ -1,0 +1,123 @@
+/*      css-reset      */
+*{margin:0;padding:0;}
+*{box-sizing: border-box;}
+*:before,*:after{box-sizing:border-box;}
+ul,ol,li{list-style: none;}
+a{border:none;text-decoration: none;color:inherit;}
+
+/*   style ---*/
+body{
+    background: #E5E5E5;
+}
+.globalHeader{
+    margin:20px;
+}
+.globalHeader  > .searchForm{
+    display:flex;
+    justify-content: space-between;
+    max-width:400px;
+}
+.globalHeader .searchForm > input{
+    padding:0 10px;
+    width:100%;
+    height:40px;
+    margin-right:10px;
+    border:none;
+    border:1px solid #ddd;
+    border-radius: 4px;
+}
+.globalHeader .searchForm > button{
+    padding:0 27px;
+    height:40px;
+    font-size: 14px;
+    border:none;
+    border-radius:4px;
+    color:#fff;
+    background: #198FD2;
+    white-space: nowrap;
+}
+@media(min-width:500px){
+    .globalHeader  > .searchForm{
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:100px;
+    }
+    .globalMain{
+        margin-top:100px;
+    }
+    .globalMain .listwrap {
+        display: flex;
+        flex-wrap:wrap;
+        margin-right:-25px;
+    }
+    .globalMain .listwrap li{
+        margin-right:25px;
+    }
+}
+
+@media(max-width:500px){
+    .globalMain ol{
+        margin-left:0;
+        margin-right:0;
+    }
+    .globalMain > ol{
+        display: flex;
+        justify-content: space-between;
+        padding:0 20px;
+        flex-wrap:wrap;
+    }
+}
+.globalMain{
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.globalMain > ol > li {
+    width:160px;
+    background:#fff;
+    border:1px solid #ddd;
+    padding:20px 0px;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:20px;
+    position: relative;
+    cursor: pointer ;
+}
+.globalMain  ol  li  .iconContent{
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px ;
+    width:64px;
+    height:64px;
+    font-size: 64px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.globalMain li  .close{
+   position: absolute;
+   top:10px;
+   right:0;
+   width:32px;
+   height:32px;
+   cursor:default;  
+   display: none;
+}
+.globalMain li:hover .close{
+    display: block;
+}
+.globalMain > .iconContent > img{
+    max-width: 100%;
+}
+.globalMain  .text{
+    font-size: 10px;
+    padding-top:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
